@@ -19,7 +19,9 @@
     "types": ["node", "vitest/globals"],
     "paths": {
       "@Components/*": ["src/components/*"],
+      "@Lib/*": ["src/lib/*"],
       "@Pages/*": ["src/pages/*"],
+      "@Services/*": ["src/services/*"],
       "@Styles/*": ["src/styles/*"]
     }
   },
