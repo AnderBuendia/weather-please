@@ -30,5 +30,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-double'],
     'max-len': ['error', 140],
     'no-underscore-dangle': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
   },
 };

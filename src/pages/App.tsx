@@ -1,10 +1,17 @@
-import { fetchForecastByQuery } from '@Services/weather.service';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from '@Pages/home';
+import { MainPaths } from '@Enums/paths/main-paths.enum';
 
 function App() {
-  fetchForecastByQuery({ query: 'Madrid' });
   return (
     <div className="w-full flex justify-center items-center min-h-screen bg-300">
-      <p>Hola</p>
+      <header></header>
+      <main>
+        <Routes>
+          <Route path={MainPaths.HOME} element={<HomePage />} />
+        </Routes>
+      </main>
+      <footer></footer>
     </div>
   );
 }
