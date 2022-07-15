@@ -19,6 +19,7 @@
     "types": ["node", "vitest/globals"],
     "paths": {
       "@Components/*": ["src/components/*"],
+      "@Enums/*": ["src/enums/*"],
       "@Lib/*": ["src/lib/*"],
       "@Pages/*": ["src/pages/*"],
       "@Services/*": ["src/services/*"],

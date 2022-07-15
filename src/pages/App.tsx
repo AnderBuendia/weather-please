@@ -1,11 +1,23 @@
-import { fetchForecastByQuery } from '@Services/weather.service';
+import { HelmetProvider } from 'react-helmet-async';
+import WeatherPanel from '@Components/WeatherPanel';
+import SeoMetaTags from '@Components/SeoMetaTags';
 
 function App() {
-  fetchForecastByQuery({ query: 'Madrid' });
   return (
-    <div className="w-full flex justify-center items-center min-h-screen bg-300">
-      <p>Hola</p>
-    </div>
+    <HelmetProvider>
+      <SeoMetaTags
+        title="Home"
+        description="What is the weather like?"
+        url=""
+      />
+      <div className="w-full flex justify-center items-center min-h-screen bg-300">
+        <header></header>
+        <main>
+          <WeatherPanel />
+        </main>
+        <footer></footer>
+      </div>
+    </HelmetProvider>
   );
 }
 

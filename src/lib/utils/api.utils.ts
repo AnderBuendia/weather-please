@@ -1,5 +1,4 @@
-const RAPID_API_KEY = import.meta.env.VITE_RAPID_API_KEY;
-const RAPID_API_HOST = import.meta.env.VITE_RAPID_API_HOST;
+import { RAPID_API_HOST, RAPID_API_KEY } from '@Lib/utils/constants';
 
 export const apiOptions = {
   method: 'GET',
