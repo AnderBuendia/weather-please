@@ -1,5 +1,5 @@
 import { render } from '@Lib/utils/test.utils';
-import SeoMetaTags from '@Components/SeoMetaTags';
+import SeoMetaTags from '@Components/generic/SeoMetaTags';
 
 describe('<SeoMetaTags>', () => {
   const props = {
