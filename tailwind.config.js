@@ -21,7 +21,7 @@ module.exports = {
     fill: colors,
     stroke: colors,
   },
-  darkMode: 'media',
+  darkMode: 'class',
   variants: {
     extend: {
       borderWidth: ['disabled'],
